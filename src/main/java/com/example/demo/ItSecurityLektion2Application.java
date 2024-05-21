@@ -10,7 +10,7 @@ public class ItSecurityLektion2Application {
 	public static void main(String[] args) {
 		SpringApplication.run(ItSecurityLektion2Application.class, args);
 
-		Controller controller = new Controller();
+		Controller controller = new Controller(new MyService(), new MyComponent(), new MyBean());
 
 		controller.welcome();
 	}
